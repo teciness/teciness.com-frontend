@@ -21,48 +21,54 @@ body{
 }
 
 nav {
-    height: 100px;
+    height: 80px;
     max-width: 1920;
-    background: linear-gradient(to right,#597EF7 0% , #B6AFFF 50% , #722ED1 100%)
+    background: linear-gradient(to right,#597EF7 0% ,#597EF7 15%, #B6AFFF 50% ,#722ED1 85%, #722ED1 100%)
 }
 .nav-logo {
-    height: 50px;
+    height: 30px;
     margin: 1.5rem 0 0 0;
+    font-weight: 100;
 }
 nav ul {
     float: right;
     list-style: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    vertical-align: middle;
-    margin-top: 1.5rem;
+    margin-top: 0.7rem;
     padding-top: 15px;
-}
-ul li {
-    padding: 0 3rem 0 0;    
-    display: inline-block;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 30vw;
+
+    max-width: 500px;
 }
 .nav-item{
     color: white;
     text-decoration: none;
     font-size: 20px;
+    font-weight: 200;
 }
 h1{
     font-size: 70px;
     color: white;
+    font-weight: 400;
 }
 
 h2{
     font-size: 48px;
     color: #22075E;
+    font-weight: 300;
 }
 
 h3{
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 300;
+
 }
 p{
     font-size: 18px;
+    font-weight: 200;
 }
 .lead{
     font-size: 22px;
@@ -75,7 +81,7 @@ p{
 .hero{
     padding-top: 18vh;
     margin: 0;
-    height: 65vh;
+    height: 80vh;
     background: linear-gradient(to right,#597EF7 0% , #722ED1 100%);
     margin-bottom: 8rem;
 }
@@ -83,12 +89,46 @@ p{
     margin-top: 50px;
     width: 700px;
     color: white;
+    font-weight: 200;
 }
 
 
 .call-to-actions{
     margin-top: 70px;
     height: 6;
+}
+
+.indicator{
+    width: 100%;
+    text-align: center;
+    overflow: visible;
+}
+
+.hero-indicator{
+    color: white;
+    margin-top: 8rem;
+    animation: 0.5s linear;
+}
+
+.hero-indicator p{
+    font-weight: 100;
+    overflow: visible;
+}
+
+
+@keyframes bounce {
+    50% {
+      transform: translateY(-15%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+
+
+.bounce{
+    animation: bounce 1s ease infinite;
 }
 
 a.btn {
@@ -106,6 +146,8 @@ a.btn {
     outline: none;
     text-decoration: n;
     font-size: 20px;
+
+    font-weight: 200;
 }
 
 .btn-primary {
@@ -141,6 +183,7 @@ a.btn {
 
 .section-desc{
     width: 730px;
+    font-weight: 200;
 }
 
 .products{
@@ -212,6 +255,8 @@ a.btn {
     "image desc"
     "image link"
     ;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .project-2 {
@@ -227,11 +272,16 @@ a.btn {
     "desc image"
     "link image"
     ;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 
 .project-image{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
     grid-area: image;
+    margin-bottom: 1rem ;
     margin: 0 auto;
 }
 
@@ -392,6 +442,7 @@ em{
 }
 
 .email-input{
+    font-weight: 200;
     background-color: #F0F0F0;
     border-radius: 15px;
     outline: none;
@@ -403,6 +454,7 @@ em{
 
 .message-input{
     background-color: #F0F0F0;
+    font-weight: 200;
     border-radius: 15px;
     outline: none;
     width: 590px;
@@ -410,4 +462,8 @@ em{
     padding: 1rem 2rem;
     resize: none;
     border-width: 0px;
+}
+.label{
+    font-weight: 200;
+    margin-top: 2rem;
 }
