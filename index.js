@@ -11,6 +11,9 @@ window.onscroll = function stick() {
     
     if(window.pageYOffset >= navOff){
         navbar.classList.add("sticky");
+    }else {
+        navbar.classList.remove("sticky");
+
     }
 
     if( window.pageYOffset <= indOff){
