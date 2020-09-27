@@ -10,8 +10,14 @@ body{
 }
 
 .container{
-    max-width: 1320px;
+    max-width: 1250px;
     margin: auto;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 nav {
@@ -82,14 +88,23 @@ p{
 
 .call-to-actions{
     margin-top: 70px;
+    height: 6;
 }
 
+a.btn {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    padding-top: 1.3rem;
+    text-decoration: none;
+}
 
 .btn {
+    text-align: center;
+    vertical-align: middle;
     border-width: 0;
     outline: none;
-
-
+    text-decoration: n;
     font-size: 20px;
 }
 
@@ -236,12 +251,14 @@ p{
     width: 125px;
     height: 32px;
     border-radius: 15px;
+    padding-top: 0 !important; 
 }
 
 .btn-fade{
     background: linear-gradient(to right,#597EF7 0% , #722ED1 100%);
     color: white;
     border-radius: 15px;
+   
 }
 
 
@@ -347,13 +364,13 @@ p{
     height: 200px;
 }
 
-.contact-button{
+.social-button{
     margin: 0.5rem 1rem;
     width: 200px;
     height: 50px;
 }
 
-.contact-button em{
+.social-button em{
     margin-right: 1rem;
 }
 
