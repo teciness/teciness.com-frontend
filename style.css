@@ -639,6 +639,9 @@
     }
     
     @media only screen and (max-device-width: 500px) {
+        .container {
+            padding: 0 1rem;
+        }
         .hero {
             padding-top: 15vh;
         }
