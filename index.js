@@ -13,7 +13,6 @@ window.onscroll = function stick() {
         navbar.classList.add("sticky");
     }else {
         navbar.classList.remove("sticky");
-
     }
 
     if( window.pageYOffset <= indOff){
