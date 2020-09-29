@@ -23,9 +23,16 @@
     
     nav {
         height: 80px;
+        width: 100vw;
         max-width: 1920;
         background: linear-gradient(to right, #597EF7 0%, #597EF7 15%, #B6AFFF 50%, #722ED1 85%, #722ED1 100%);
         z-index: 5;
+    }
+    
+    nav .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     
     .nav-logo {
@@ -34,14 +41,13 @@
         font-weight: 100;
     }
     
-    nav ul {
-        float: right;
+    .nav-list {
         list-style: none;
         margin-top: 0.7rem;
         padding-top: 15px;
         display: flex;
         justify-content: space-between;
-        width: 30vw;
+        width: 40vw;
         max-width: 500px;
     }
     
@@ -110,7 +116,7 @@
     
     .hero-indicator {
         color: white;
-        margin-top: 8rem;
+        margin-top: 6rem;
         animation: 0.5s linear;
     }
     
@@ -225,6 +231,10 @@
     
     .card-head {
         margin-bottom: 2rem;
+    }
+    
+    .card-text {
+        text-align: justify;
     }
     
     .card {
@@ -434,10 +444,25 @@
         margin-top: 2rem;
     }
     
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40px;
+        height: 25px;
+        margin-top: 1.6rem;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    .line {
+        width: 100%;
+        background-color: white;
+        border-radius: 20px;
+        height: 5px;
+    }
+    
     @media only screen and (max-device-width: 1090px) {
-        .nav-list {
-            display: none;
-        }
         .project-title {
             height: 1.5rem;
             overflow: visible;
@@ -467,6 +492,19 @@
     }
     
     @media only screen and (max-device-width: 920px) {
+        .hamburger {
+            display: flex;
+        }
+        .nav-list {
+            display: none;
+        }
+        .cards {
+            flex-direction: column;
+        }
+        .card {
+            margin: 1rem auto;
+            max-width: 80%;
+        }
         .contact-us .container {
             text-align: center;
             padding-bottom: 10rem;
@@ -574,13 +612,6 @@
         .product p {
             text-align: justify;
             padding: 0 1rem;
-        }
-        .cards {
-            flex-direction: column;
-        }
-        .card {
-            margin: 1rem auto;
-            max-width: 80%;
         }
         .project-title {
             height: 1.5rem;
