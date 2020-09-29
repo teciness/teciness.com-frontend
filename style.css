@@ -79,7 +79,7 @@
     }
     
     .hero h1 {
-        width: 800px;
+        width: 700px;
     }
     
     .hero {
@@ -92,7 +92,7 @@
     
     .hero .lead {
         margin-top: 50px;
-        width: 700px;
+        width: 600px;
         color: white;
         font-weight: 200;
     }
@@ -381,6 +381,8 @@
         margin: 0.5rem 1rem;
         width: 200px;
         height: 50px;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
     
     .social-button em {
@@ -499,6 +501,9 @@
     }
     
     @media only screen and (max-device-width: 700px) {
+        nav {
+            background: linear-gradient(to right, #597EF7 0%, #7090FB 50%, #722ED1 100%);
+        }
         h1 {
             font-size: 45px;
         }
@@ -665,7 +670,7 @@
             flex-direction: column;
             text-align: center;
             height: 6rem;
-            overflow: auto;
+            overflow: hidden;
             margin: 0;
         }
         .tech-title img {
@@ -686,21 +691,14 @@
         .contact-us h2 {
             text-align: center;
         }
-        .social-buttons {
-            padding: 0;
-            margin: 0 auto;
-        }
         .social-button {
-            width: 105px;
-            height: 30px;
-        }
-        .social-button {
-            width: 105px;
-            height: 30px;
+            /* width: 105px;
+            height: 30px; */
+            border-radius: 10px;
             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
             padding: 0 3px;
+            width: 105px;
+            height: 30px;
         }
         .social-button span {
             margin-bottom: 0.5rem;
@@ -713,9 +711,9 @@
             padding: 0;
         }
         .message-input {
-            min-width: 70%;
+            max-width: 100vh;
         }
         .email-input {
-            min-width: 70%;
+            width: 100vh;
         }
     }
