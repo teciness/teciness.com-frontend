@@ -497,19 +497,19 @@
     
     @keyframes slidein {
         from {
-            transform: translateX(200%);
+            transform: translateY(-100%);
         }
         to {
-            transform: translateX(0%);
+            transform: translateY(0%);
         }
     }
     
     @keyframes slideout {
         from {
-            transform: translateX(0%);
+            transform: translateY(0%);
         }
         to {
-            transform: translateX(200%);
+            transform: translateY(-100%);
         }
     }
     
@@ -526,18 +526,17 @@
     }
     
     .dropdown {
-        height: 50vh;
+        height: 30vh;
         z-index: 2;
         background-color: #141414;
-        opacity: 70%;
-        width: 70vw;
-        margin-left: 30vw;
+        opacity: 95%;
+        width: 100vw;
         margin-top: 80px;
         display: none;
         flex-direction: column;
         justify-content: space-around;
         text-align: center;
-        border-bottom-left-radius: 20px;
+        border-radius:0 0 7px 7px ;
         transform: translateX(100%);
     }
     
