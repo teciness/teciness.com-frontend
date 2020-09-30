@@ -527,8 +527,8 @@
     
     .dropdown {
         height: 30vh;
-        z-index: 2;
-        background-color: #141414;
+        z-index: 0;
+        background-color: #030852;
         opacity: 95%;
         width: 100vw;
         margin-top: 80px;
