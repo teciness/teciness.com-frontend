@@ -536,7 +536,7 @@
         flex-direction: column;
         justify-content: space-around;
         text-align: center;
-        border-radius:0 0 7px 7px ;
+        border-radius: 0 0 7px 7px;
         transform: translateX(100%);
     }
     
@@ -546,18 +546,10 @@
             overflow: visible;
         }
         .project-1 {
-            /* display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 5fr 1fr 2fr 1fr;
-            grid-template-areas: "image" "title" "desc" "link"; */
             display: flex;
             flex-direction: column;
         }
         .project-2 {
-            /* display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 5fr 1fr 2fr 1fr;
-            grid-template-areas: "image" "title" "desc" "link"; */
             display: flex;
             flex-direction: column;
         }
@@ -566,6 +558,9 @@
         }
         .project-title {
             height: 2rem;
+        }
+        .hero-indicator {
+            margin-top: 40%;
         }
     }
     
@@ -647,6 +642,9 @@
         .lead {
             font-size: 18px;
         }
+        .call-to-actions {
+            margin-top: 2rem;
+        }
         .btn-primary {
             width: 10rem;
             height: 2.5rem;
@@ -723,21 +721,26 @@
     }
     
     @media only screen and (max-device-width: 500px) {
+        .lead {
+            font-size: 18px;
+        }
         .container {
             padding: 0 1rem;
         }
         .hero {
             padding-top: 15vh;
+            overflow: hidden;
         }
         .hero h1 {
             margin: 0 auto;
             max-width: 100%;
+            font-size: 40px;
         }
         .hero .lead {
             margin: 1rem auto;
         }
         .call-to-actions {
-            height: 150px;
+            height: 100px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
@@ -745,18 +748,20 @@
             width: 180px;
         }
         .btn-primary {
+            padding-top: 0.5rem !important;
             width: 180px;
-            height: 45px;
+            height: 35px;
         }
         .btn-secondary {
+            padding-top: 0.5rem !important;
             width: 180px;
-            height: 45px;
+            height: 35px;
         }
         .cta-1 {
             margin: 0;
         }
         .hero-indicator {
-            margin-top: 3.5rem;
+            margin-top: 3rem;
         }
         .nav .container {
             text-align: left;
@@ -833,5 +838,26 @@
         }
         .email-input {
             width: 100vh;
+        }
+    }
+    
+    @media only screen and (max-device-width: 350px) {
+        h1 {
+            font-size: 25px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 15px;
+        }
+        .lead {
+            font-size: 13px;
+        }
+        p {
+            font-size: 11px;
+        }
+        .hero-indicator {
+            margin-top: 1rem;
         }
     }
