@@ -1,6 +1,6 @@
 let navbar = document.getElementById("navbar")
 let heroIndicator = document.getElementById("hero-indicator")
-
+let heroSection = document.getElementById("hero")
 var navOff = navbar.offsetTop;
 var indOff = document.getElementById("indicator").offsetTop - 100;
 
@@ -20,7 +20,7 @@ window.onscroll = function stick() {
         heroIndicator.classList.remove("bounce");
     }
 
-
+    heroIndicator.style.opacity = 1 - (window.pageYOffset / heroSection.offsetHeight);
 
 }
 
